@@ -1,0 +1,11 @@
+syntax = "proto3";
+package hehepb;
+
+import "test.proto";
+
+message mine {
+  string detail = 1;
+  oneof details {
+    testpb.asd asd = 2;
+  }
+}
